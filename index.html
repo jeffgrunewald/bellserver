@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png" />
+    <title>COW Bell | Home</title>
+    <link type="text/css" rel="stylesheet" href="bell.css" media="all" />
+</head>
+
+<body>
+    <header>
+        <h1><span id="school-name">GENERIC SCHOOL NAME</span> Bell System</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Monday.html">Monday</a></li>
+                <li><a href="Tuesday.html">Tuesday</a></li>
+                <li><a href="Wednesday.html">Wednesday</a></li>
+                <li><a href="Thursday.html">Thursday</a></li>
+                <li><a href="Friday.html">Friday</a></li>
+                <li><a href="emergency.html" id="ld">Emergency</a></li>
+                <li><a href="javascript:self.close()" onclick="alert('Almost there; please close your browser to complete logout')">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="welcome">
+        <p>Welcome to the Compact-over-Web Bell System, or COW Bell for <span id="school-name">GENERIC SCHOOL NAME</span>.<br>
+        Use the navigation menu to alter the daily schedules or trigger the emergency lockdown alarm.</p>
+        <p>Everyone needs more COW Bell.</p>
+        <p><form method="post" id="ring" action="scripts/playsound.php">
+            <input name="sound" type="hidden" value="end">
+            <input name="origin" type="hidden" value="index">
+            <button form="ring">Ring my bell</button>
+        </form></p>
+        <p><form method="post" id="release" action="scripts/playsound.php">
+            <input name="sound" type="hidden" value="release">
+            <input name="origin" type="hidden" value="index">
+            <button form="release">Release valve</button>
+        </form></p>
+    </section>
+    
+    <footer>
+        <p>Copyright 2015 - Grunewald Design Associates</p>
+    </footer>
+
+</body>
+</html>
