@@ -1,0 +1,5 @@
+AuthUserFile /etc/apache2/security/.htpasswd
+AuthGroupFile /dev/null
+AuthName "Restricted Access"
+AuthType Basic
+Require valid-user
