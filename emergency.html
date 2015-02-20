@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png" />
+    <title>COW Bell | Emergency Lockdown</title>
+    <link type="text/css" rel="stylesheet" href="bell.css" media="all" />
+</head>
+
+<body>
+    <header>
+        <h1><span id="school-name">GENERIC SCHOOL NAME</span> Bell System</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Monday.html">Monday</a></li>
+                <li><a href="Tuesday.html">Tuesday</a></li>
+                <li><a href="Wednesday.html">Wednesday</a></li>
+                <li><a href="Thursday.html">Thursday</a></li>
+                <li><a href="Friday.html">Friday</a></li>
+                <li><a href="emergency.html" id="ld">Emergency</a></li>
+                <li><a href="javascript:self.close()" onclick="javascript:alert('Almost there; please close your browser to complete logout')">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="danger">
+            <p>Click the button to initiate an emergency lockdown drill announcement.<br>
+            Do this only in the event of an actual emergency or during an authorized drill.</p>
+            <form method="post" id="emergency" action="scripts/playsound.php">
+                <input name="sound" type="hidden" value="emergency">
+                <input name="origin" type="hidden" value="emergency">
+                <button form="emergency">Initiate Lockdown</button>
+            </form>
+    </section>
+    
+    <footer>
+        <p>Copyright 2015 - Grunewald Design Associates</p>
+    </footer>
+
+</body>
+</html>
