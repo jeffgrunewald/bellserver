@@ -1,0 +1,117 @@
+body {
+    font-family: Verdana,sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    color: #635e95;
+    background-image: url("images/bell.png");
+    background-repeat: no-repeat;
+    background-position: 2em 0.1em;
+    background-size: auto 6em;
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+    border-bottom: solid #635e95;
+    text-align: center;
+}
+
+a:link {
+    text-decoration: none;
+    color: #635e95;
+}
+
+a:visited {
+    color: #635e95;
+}
+
+a:hover {
+    color: #ff0066
+}
+
+ul {
+    list-style-type: none;
+    font-size: 110%;
+}
+
+ul li {
+    display: inline;
+    text-transform: uppercase;
+    padding: 0.7em;
+}
+
+#ld {
+    border: 0.15em solid #c0c0c0;
+    border-radius: 0.3em;
+    padding: 0.2em;
+}
+
+#ld:hover {
+    border-color: #ff0066;
+}
+
+button {
+    border: 0.15em solid #c0c0c0;
+    border-radius: 0.3em;
+    padding: 0.2em;
+    background: #fff;
+    text-transform: uppercase;
+    color: #635e95;
+    font-size: 105%;
+    cursor: pointer;
+}
+
+button:hover {
+    border-color: #ff0066;
+    color: #ff0066;
+}
+
+section {
+    min-height: 25em;
+    text-align: center;
+}
+
+#welcome, #danger {
+    position: relative;
+    top: 5em;
+    text-align: center;
+    font-size: 105%;
+}
+
+#center-table {
+    width: 70em;
+    margin: 0 auto;
+}
+
+table {
+    text-align: right;
+    border-spacing: 0.4em;
+    table-layout: fixed;
+    width: 99%;
+}
+
+.label-ol {
+    border: 0.1em solid #635e95;
+    color: #fff;
+    background-color: #635e95;
+    border-radius: 0.3em;
+    text-align: center;
+}
+
+#p1-twomin, #p1-tardy, #p1-end, #p2-twomin, #p2-tardy, #p2-end, #p3-twomin, #p3-tardy, #p3-end,
+#p4-twomin, #p4-tardy, #p4-end, #p5-twomin, #p5-tardy, #p5-end, #p6-twomin, #p6-tardy, #p6-end,
+#p7-twomin, #p7-tardy, #p7-end, #p8-twomin, #p8-tardy, #p8-end, #p9-twomin, #p9-tardy, #p9-end,
+#p10-twomin, #p10-tardy, #p10-end, #p11-twomin, #p11-tardy, #p11-end, #p12-twomin, #p12-tardy, #p12-end {
+    font-weight: bold;
+}
+
+#submit-button {
+    margin-top: 0.7em;
+    margin-bottom: 1.5em;
+}
+
+footer {
+    text-align: center;
+    font-size: 75%;
+    border-top: 0.1em solid #c0c0c0;
+}
