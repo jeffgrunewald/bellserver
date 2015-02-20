@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png" />
+    <title>COW Bell | Tuesday Schedule</title>
+    <link type="text/css" rel="stylesheet" href="bell.css" media="all" />
+</head>
+
+<body>
+    <header>
+        <h1><span id="school-name">GENERIC SCHOOL NAME</span> Bell System</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Monday.html">Monday</a></li>
+                <li><a href="Tuesday.html">Tuesday</a></li>
+                <li><a href="Wednesday.html">Wednesday</a></li>
+                <li><a href="Thursday.html">Thursday</a></li>
+                <li><a href="Friday.html">Friday</a></li>
+                <li><a href="emergency.html" id="ld">Emergency</a></li>
+                <li><a href="javascript:self.close()" onclick="javascript:alert('Almost there; please close your browser to complete logout')">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="schedules">
+        <h1>Tuesday</h1>
+        <form method="post" id="submit-changes" action="scripts/submit.php">
+            <input name="day" type="hidden" value="Tuesday">
+            <div id=center-table>
+            <table>
+                <tr>
+                    <td><table>
+                        <tr><td class="label-ol">Period 1</td><td>Warning:</td><td id="p1-twomin">08:00</td>
+                            <td><input type="time" id="p1-t1" name="p1-t1" tabindex=1 autofocus></td></tr>
+                        <tr><td></td><td>Start:</td><td id="p1-tardy">08:01</td>
+                            <td><input type="time" id="p1-t2" name="p1-t2" tabindex=2></td></tr>
+                        <tr><td></td><td>End:</td><td id="p1-end">08:02</td>
+                            <td><input type="time" id="p1-t3" name="p1-t3" tabindex=3></td></tr>
+                    </table></td>
+                    <td><table>
+                        <tr><td class="label-ol">Period 5</td><td>Warning:</td><td id="p5-twomin">10:00</td>
+                            <td><input type="time" id="p5-t1" name="p5-t1" tabindex=13></td></tr>
+                        <tr><td></td><td>Start:</td><td id="p5-tardy">10:01</td>
+                            <td><input type="time" id="p5-t2" name="p5-t2" tabindex=14></td></tr>
+                        <tr><td></td><td>End:</td><td id="p5-end">10:02</td>
+                            <td><input type="time" id="p5-t3" name="p5-t3" tabindex=15></td></tr>
+                    </table></td>
+                    <td><table>
+                        <tr><td class="label-ol">Period 9</td><td>Warning:</td><td id="p9-twomin">12:00</td>
+                            <td><input type="time" id="p9-t1" name="p9-t1" tabindex=25></td></tr>
+                        <tr><td></td><td>Start:</td><td id="p9-tardy">12:01</td>
+                            <td><input type="time" id="p9-t2" name="p9-t2" tabindex=26></td></tr>
+                        <tr><td></td><td>End:</td><td id="p9-end">12:02</td>
+                            <td><input type="time" id="p9-t3" name="p9-t3" tabindex=27></td></tr>
+                    </table></td>
+                </tr>
+                <tr>
+                    <td><table>
+                        <tr><td class="label-ol">Period 2</td><td>Warning:</td><td id="p2-twomin">08:30</td>
+                            <td><input type="time" id="p2-t1" name="p2-t1" tabindex=4></td></tr>
+                        <tr><td></td><td>Start:</td><td id="p2-tardy">08:31</td>
+                            <td><input type="time" id="p2-t2" name="p2-t2" tabindex=5></td></tr>
+                        <tr><td></td><td>End:</td><td id="p2-end">08:32</td>
+                            <td><input type="time" id="p2-t3" name="p2-t3" tabindex=6></td></tr>
+                    </table></td>
+                    <td><table>
+                        <tr><td class="label-ol">Period 6</td><td>Warning:</td><td id="p6-twomin">10:30</td>
+                            <td><input type="time" id="p6-t1" name="p6-t1" tabindex=16></td></tr>
+                        <tr><td></td><td>Start:</td><td id="p6-tardy">10:31</td>
+                            <td><input type="time" id="p6-t2" name="p6-t2" tabindex=17></td></tr>
+                        <tr><td></td><td>End:</td><td id="p6-end">10:32</td>
+                            <td><input type="time" id="p6-t3" name="p6-t3" tabindex=18></td></tr>
+                    </table></td>
+                    <td><table>
+                        <tr><td class="label-ol">Period 10</td><td>Warning:</td><td id="p10-twomin">12:30</td>
+                            <td><input type="time" id="p10-t1" name="p10-t1" tabindex=28></td></tr>
+                        <tr><td></td><td>Start:</td><td id="p10-tardy">12:31</td>
+                            <td><input type="time" id="p10-t2" name="p10-t2" tabindex=29></td></tr>
+                        <tr><td></td><td>End:</td><td id="p10-end">12:32</td>
+                            <td><input type="time" id="p10-t3" name="p10-t3" tabindex=30></td></tr>
+                    </table></td>
+                </tr>
+                <tr>
+                    <td><table>
+                        <tr><td class="label-ol">Period 3</td><td>Warning:</td><td id="p3-twomin">09:00</td>
+                            <td><input type="time" id="p3-t1" name="p3-t1" tabindex=7></td></tr>
+                        <tr><td></td><td>Start:</td><td id="p3-tardy">09:01</td>
+                            <td><input type="time" id="p3-t2" name="p3-t2" tabindex=8></td></tr>
+                        <tr><td></td><td>End:</td><td id="p3-end">09:02</td>
+                            <td><input type="time" id="p3-t3" name="p3-t3" tabindex=9></td></tr>
+                    </table></td>
+                    <td><table>
+                        <tr><td class="label-ol">Period 7</td><td>Warning:</td><td id="p7-twomin">11:00</td>
+                            <td><input type="time" id="p7-t1" name="p7-t1" tabindex=19></td></tr>
+                        <tr><td></td><td>Start:</td><td id="p7-tardy">11:01</td>
+                            <td><input type="time" id="p7-t2" name="p7-t2" tabindex=20></td></tr>
+                        <tr><td></td><td>End:</td><td id="p7-end">11:02</td>
+                            <td><input type="time" id="p7-t3" name="p7-t3" tabindex=21></td></tr>
+                    </table></td>
+                    <td><table>
+                        <tr><td class="label-ol">Period 11</td><td>Warning:</td><td id="p11-twomin">13:00</td>
+                            <td><input type="time" id="p11-t1" name="p11-t1" tabindex=31></td></tr>
+                        <tr><td></td><td>Start:</td><td id="p11-tardy">13:01</td>
+                            <td><input type="time" id="p11-t2" name="p11-t2" tabindex=32></td></tr>
+                        <tr><td></td><td>End:</td><td id="p11-end">13:02</td>
+                            <td><input type="time" id="p11-t3" name="p11-t3" tabindex=33></td></tr>
+                    </table></td>
+                </tr>
+                <tr>
+                    <td><table>
+                        <tr><td class="label-ol">Period 4</td><td>Warning:</td><td id="p4-twomin">09:30</td>
+                            <td><input type="time" id="p4-t1" name="p4-t1" tabindex=10></td></tr>
+                        <tr><td></td><td>Start:</td><td id="p4-tardy">09:31</td>
+                            <td><input type="time" id="p4-t2" name="p4-t2" tabindex=11></td></tr>
+                        <tr><td></td><td>End:</td><td id="p4-end">09:32</td>
+                            <td><input type="time" id="p4-t3" name="p4-t3" tabindex=12></td></tr>
+                    </table></td>
+                    <td><table>
+                        <tr><td class="label-ol">Period 8</td><td>Warning:</td><td id="p8-twomin">11:30</td>
+                            <td><input type="time" id="p8-t1" name="p8-t1" tabindex=22></td></tr>
+                        <tr><td></td><td>Start:</td><td id="p8-tardy">11:31</td>
+                            <td><input type="time" id="p8-t2" name="p8-t2" tabindex=23></td></tr>
+                        <tr><td></td><td>End:</td><td id="p8-end">11:32</td>
+                            <td><input type="time" id="p8-t3" name="p8-t3" tabindex=24></td></tr>
+                    </table></td>
+                    <td><table>
+                        <tr><td class="label-ol">Period 12</td><td>Warning:</td><td id="p12-twomin">13:30</td>
+                            <td><input type="time" id="p12-t1" name="p12-t1" tabindex=34></td></tr>
+                        <tr><td></td><td>Start:</td><td id="p12-tardy">13:31</td>
+                            <td><input type="time" id="p12-t2" name="p12-t2" tabindex=35></td></tr>
+                        <tr><td></td><td>End:</td><td id="p12-end">13:32</td>
+                            <td><input type="time" id="p12-t3" name="p12-t3" tabindex=36></td></tr>
+                    </table></td>
+                </tr>
+            </table>
+            </div>
+            <button id="submit-button" form="submit-changes">Submit Changes</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>Copyright 2015 - Grunewald Design Associates</p>
+    </footer>
+
+</body>
+</html>
