@@ -1,0 +1,47 @@
+#!/bin/bash
+
+# script must be run as root with sudo
+
+dpkg-reconfigure tzdata
+
+aptitude install apache2 php5 libapache2-mod-php5 php5-cli php-pear
+
+a2dissite default
+
+usermod -a -G audio www-data
+
+echo "Enter new VirtualServer name: "
+
+read vserver
+
+echo "Enter new VirtualAlias: "
+
+read valias
+
+sed -i "s/WWW.COWBELL.COM/$valias/" "./apache2config"
+
+sed -i "s/COWBELL/$vserver/" "./apache2config"
+
+mv ./apache2config /etc/apache2/sites-available/cowbell
+
+mv ./cowbell /var/www/cowbell
+
+chown -R www-data:www-data /var/www/cowbell
+
+mkdir /etc/apache2/security
+
+a2ensite cowbell
+
+service apache2 restart
+
+/usr/bin/php /var/www/cowbell/scripts/rename.php
+
+echo "Enter username of first bell system user: "
+
+read firstuser
+
+htpasswd -c /etc/apache2/security/.htpasswd $firstuser
+
+sudo bash -c `echo "* 8-16 * 1-6,9-12 1-5 root /var/www/cowbell/scripts/playsched > /dev/null" >> /etc/crontab`
+
+service cron restart
